@@ -1,0 +1,37 @@
+{
+  "name": "bsky-block",
+  "version": "1.0.0",
+  "main": "main.js",
+  "author": "Mykhailo Pichka",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "dev": "node ./dist/main.js",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/cli-color": "^2.0.6",
+    "@types/luxon": "^3.3.7",
+    "@types/node": "^20.10.4",
+    "@typescript-eslint/eslint-plugin": "^6.13.2",
+    "@typescript-eslint/parser": "^6.13.2",
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "prettier": "^3.1.0",
+    "reflect-metadata": "^0.1.14",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "cli-color": "^2.0.3",
+    "dotenv": "^16.3.1",
+    "luxon": "^3.4.4",
+    "pg": "^8.11.3",
+    "sequelize": "^6.35.1",
+    "sequelize-typescript": "^2.1.6"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "env": {
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "no-duplicate-imports": "error",
+    "indent": [
+      "off",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "object-curly-spacing": [
+      "warn",
+      "always"
+    ],
+    "no-var": "error",
+    "no-empty": "error",
+    "no-useless-constructor": "off",
+    "no-empty-function": "off",
+    "eol-last": "warn",
+    "object-shorthand": [
+      "warn",
+      "always"
+    ],
+    "prefer-const": "warn",
+    "prefer-arrow-callback": "warn",
+    "space-before-blocks": "warn",
+    "no-trailing-spaces": [
+      "error"
+    ],
+    "no-multiple-empty-lines": [
+      "warn",
+      {
+        "max": 1
+      }
+    ],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "only-multiline",
+        "objects": "only-multiline",
+        "imports": "ignore",
+        "exports": "ignore",
+        "functions": "ignore"
+      }
+    ],
+    "no-shadow": "warn",
+    "@typescript-eslint/no-shadow": [
+      "error"
+    ]
+  }
+}
