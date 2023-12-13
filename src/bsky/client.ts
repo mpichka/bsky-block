@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios, { AxiosInstance } from 'axios';
 import { Credentials } from './types/credentials';
 import { Feeds } from './types/feeds';
 import { Followers, Follows } from './types/followers';
@@ -28,6 +28,7 @@ export class BskyClient {
     getAuthorFeed: () => this.getUrl('app.bsky.feed.getAuthorFeed'),
   };
   private logger = false;
+  private _client: AxiosInstance | null = null;
 
   constructor(options?: BskyClientOptions) {
     if (!options) return;

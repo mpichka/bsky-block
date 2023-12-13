@@ -76,6 +76,12 @@ export class Actor extends Model {
   @Column(DataType.STRING)
   lang: string;
 
+  // 0 - target actor
+  // 1 - actors that target actor follows
+  // 2 - actors that users from level 1 follows
+  @Column(DataType.INTEGER)
+  level: string;
+
   @Column({
     type: DataType.DATE,
     allowNull: true,
